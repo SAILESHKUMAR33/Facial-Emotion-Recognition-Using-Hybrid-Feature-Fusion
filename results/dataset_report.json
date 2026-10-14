@@ -1,0 +1,36 @@
+{
+  "classes": [
+    "Anger",
+    "Confused",
+    "Excited",
+    "Fear",
+    "Happy",
+    "Sadness"
+  ],
+  "total_files": 2255,
+  "formats": {
+    ".jpg": 2255
+  },
+  "images_per_class_readable": {
+    "Anger": 755,
+    "Confused": 592,
+    "Excited": 224,
+    "Fear": 235,
+    "Happy": 231,
+    "Sadness": 218
+  },
+  "images_per_class_clean": {
+    "Anger": 566,
+    "Confused": 428,
+    "Excited": 180,
+    "Fear": 181,
+    "Happy": 187,
+    "Sadness": 178
+  },
+  "issue_counts": {
+    "near_duplicate_of": 490,
+    "duplicate_of": 39,
+    "no_face": 6
+  },
+  "heic_converted": 36
+}

@@ -1,0 +1,12 @@
+# Use Python 3.10 or 3.11 (TensorFlow 2.15 does not support 3.12+)
+tensorflow==2.15.0
+mediapipe==0.10.14
+numpy<2
+pandas
+matplotlib
+scikit-learn
+scipy
+Pillow
+pillow-heif
+tqdm
+joblib

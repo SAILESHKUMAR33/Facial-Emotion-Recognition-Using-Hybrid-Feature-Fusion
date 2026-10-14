@@ -1,0 +1,206 @@
+{
+  "custom_cnn": {
+    "name": "custom_cnn",
+    "test_accuracy": 0.25120772946859904,
+    "precision_macro": 0.04186795491143317,
+    "recall_macro": 0.16666666666666666,
+    "f1_macro": 0.06692406692406692,
+    "val_accuracy": 0.25120772946859904,
+    "train_time_s": 1783.8270019999472,
+    "inference_ms_per_image": 27.747857031499734,
+    "params": 1208806,
+    "per_class_f1": {
+      "Anger": 0.0,
+      "Confused": 0.4015444015444015,
+      "Excited": 0.0,
+      "Fear": 0.0,
+      "Happy": 0.0,
+      "Sadness": 0.0
+    }
+  },
+  "transfer_frozen": {
+    "name": "transfer_frozen",
+    "test_accuracy": 0.5058567603748326,
+    "precision_macro": 0.4561800045709849,
+    "recall_macro": 0.4890434579423998,
+    "f1_macro": 0.4547530895347288,
+    "val_accuracy": 0.5058621675722047,
+    "train_time_s": 5070.76505590009,
+    "inference_ms_per_image": 11.236541406105971,
+    "params": 2422597,
+    "per_class_f1": {
+      "angry": 0.3996415770609319,
+      "fear": 0.11864406779661017,
+      "happy": 0.6789487943646708,
+      "sad": 0.4590285502410085,
+      "surprise": 0.6175024582104228
+    }
+  },
+  "transfer_finetuned": {
+    "name": "transfer_finetuned",
+    "test_accuracy": 0.6137884872824632,
+    "precision_macro": 0.5735007213988421,
+    "recall_macro": 0.5948963260500099,
+    "f1_macro": 0.5664295853827266,
+    "val_accuracy": 0.5996568487274807,
+    "train_time_s": 10058.192672100035,
+    "inference_ms_per_image": 9.229622656675929,
+    "params": 2422597,
+    "per_class_f1": {
+      "angry": 0.5219337511190689,
+      "fear": 0.25348189415041783,
+      "happy": 0.8284286507495836,
+      "sad": 0.535727646838758,
+      "surprise": 0.6925759840558047
+    }
+  },
+  "transfer_learning": {
+    "name": "transfer_learning",
+    "test_accuracy": 0.6137884872824632,
+    "precision_macro": 0.5735007213988421,
+    "recall_macro": 0.5948963260500099,
+    "f1_macro": 0.5664295853827266,
+    "val_accuracy": 0.5996568487274807,
+    "train_time_s": 10058.192672100035,
+    "inference_ms_per_image": 9.229622656675929,
+    "params": 2422597,
+    "per_class_f1": {
+      "angry": 0.5219337511190689,
+      "fear": 0.25348189415041783,
+      "happy": 0.8284286507495836,
+      "sad": 0.535727646838758,
+      "surprise": 0.6925759840558047
+    },
+    "source": "transfer_finetuned"
+  },
+  "landmark_mlp": {
+    "name": "landmark_mlp",
+    "test_accuracy": 0.5112115127175368,
+    "precision_macro": 0.4923405930539766,
+    "recall_macro": 0.491427076514376,
+    "f1_macro": 0.4705439240097548,
+    "val_accuracy": 0.49413783242779524,
+    "train_time_s": 151.9436131999828,
+    "inference_ms_per_image": 0.4042796872454346,
+    "params": 90885,
+    "per_class_f1": {
+      "angry": 0.4033554701153443,
+      "fear": 0.1913536498936924,
+      "happy": 0.7531951150241408,
+      "sad": 0.41272498953537046,
+      "surprise": 0.592090395480226
+    }
+  },
+  "fusion_all_frozen": {
+    "name": "fusion_all_frozen",
+    "test_accuracy": 0.4106280193236715,
+    "precision_macro": 0.41463998963998966,
+    "recall_macro": 0.3272250092902267,
+    "f1_macro": 0.31116488368143996,
+    "val_accuracy": 0.42028985507246375,
+    "train_time_s": 80.77958349999972,
+    "inference_ms_per_image": 32.42038984353712,
+    "params": 3821862,
+    "per_class_f1": {
+      "Anger": 0.44285714285714284,
+      "Confused": 0.4900662251655629,
+      "Excited": 0.5238095238095238,
+      "Fear": 0.07692307692307693,
+      "Happy": 0.3333333333333333,
+      "Sadness": 0.0
+    }
+  },
+  "fusion_all_finetuned": {
+    "name": "fusion_all_finetuned",
+    "test_accuracy": 0.4251207729468599,
+    "precision_macro": 0.4356018642604009,
+    "recall_macro": 0.36392140468227424,
+    "f1_macro": 0.36872618887544256,
+    "val_accuracy": 0.4251207729468599,
+    "train_time_s": 127.9725687999744,
+    "inference_ms_per_image": 33.193930468769395,
+    "params": 3821862,
+    "per_class_f1": {
+      "Anger": 0.44285714285714284,
+      "Confused": 0.4925373134328358,
+      "Excited": 0.5238095238095238,
+      "Fear": 0.26666666666666666,
+      "Happy": 0.4864864864864865,
+      "Sadness": 0.0
+    }
+  },
+  "fusion_cnn_tl": {
+    "name": "fusion_cnn_tl",
+    "test_accuracy": 0.2608695652173913,
+    "precision_macro": 0.1089678510998308,
+    "recall_macro": 0.17100909842845327,
+    "f1_macro": 0.08545292280232038,
+    "val_accuracy": 0.23671497584541062,
+    "train_time_s": 84.34566520003136,
+    "inference_ms_per_image": 32.3876796874174,
+    "params": 3698342,
+    "per_class_f1": {
+      "Anger": 0.1111111111111111,
+      "Confused": 0.40160642570281124,
+      "Excited": 0.0,
+      "Fear": 0.0,
+      "Happy": 0.0,
+      "Sadness": 0.0
+    }
+  },
+  "fusion_tl_lm": {
+    "name": "fusion_tl_lm",
+    "test_accuracy": 0.6445783132530121,
+    "precision_macro": 0.6168790950185791,
+    "recall_macro": 0.6118730379630363,
+    "f1_macro": 0.6057454071872288,
+    "val_accuracy": 0.6196740062911067,
+    "train_time_s": 1882.3958850000054,
+    "inference_ms_per_image": 11.29982109341654,
+    "params": 2580293,
+    "per_class_f1": {
+      "angry": 0.5279620853080569,
+      "fear": 0.34578847371754273,
+      "happy": 0.8531543624161074,
+      "sad": 0.5810904071773637,
+      "surprise": 0.7207317073170731
+    }
+  },
+  "fusion_cnn_lm": {
+    "name": "fusion_cnn_lm",
+    "test_accuracy": 0.36231884057971014,
+    "precision_macro": 0.20898591751541074,
+    "recall_macro": 0.26157981803143093,
+    "f1_macro": 0.21126203366536297,
+    "val_accuracy": 0.38164251207729466,
+    "train_time_s": 72.42368520004675,
+    "inference_ms_per_image": 25.225315624993527,
+    "params": 1366630,
+    "per_class_f1": {
+      "Anger": 0.4748858447488584,
+      "Confused": 0.3037974683544304,
+      "Excited": 0.4888888888888889,
+      "Fear": 0.0,
+      "Happy": 0.0,
+      "Sadness": 0.0
+    }
+  },
+  "effnet_lm_fusion": {
+    "name": "effnet_lm_fusion",
+    "test_accuracy": 0.6275100401606426,
+    "precision_macro": 0.5980182676313135,
+    "recall_macro": 0.6115617970859499,
+    "f1_macro": 0.6019514364217128,
+    "val_accuracy": 0.6153846153846154,
+    "train_time_s": 9099.69066389976,
+    "inference_ms_per_image": 16.932260936300736,
+    "params": 4799016,
+    "per_class_f1": {
+      "angry": 0.5258033106134372,
+      "fear": 0.41935483870967744,
+      "happy": 0.8145676953016403,
+      "sad": 0.5384615384615384,
+      "surprise": 0.7115697990222705
+    }
+  }
+}

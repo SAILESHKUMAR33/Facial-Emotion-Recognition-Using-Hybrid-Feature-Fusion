@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Datasets and processed data (~58,000 files)
+dataset/
+dataset_face/
+processed/
+heic_originals/
+
+# Result images (confusion matrices, training histories, screenshots)
+results/*.png
+results/*.jpg
+results/*.jpeg
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
