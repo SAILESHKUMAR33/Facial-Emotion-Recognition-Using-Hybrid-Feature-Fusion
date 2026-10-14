@@ -1,17 +1,12 @@
-# Core Deep Learning & ML
-tensorflow==2.15.0
+# Core Machine Learning & Deep Learning (supports Python 3.10, 3.11, 3.12)
+tensorflow-cpu>=2.16.0
 tf-keras
-mediapipe==0.10.14
+mediapipe>=0.10.14
 numpy<2
-pandas
-matplotlib
 scikit-learn
-scipy
 Pillow
-pillow-heif
-tqdm
 joblib
 
-# Web & Deployment
+# Web Server & Deployment
 Flask>=3.0.0
 opencv-python-headless
