@@ -32,8 +32,11 @@ def set_seed(seed=SEED):
 
 # ------------------------------------------------------------------ data ---
 def get_classes():
-    with open(PROCESSED_DIR / "classes.json") as f:
-        return json.load(f)
+    for p in (PROCESSED_DIR / "classes.json", MODELS_DIR / "classes.json"):
+        if p.exists():
+            with open(p) as f:
+                return json.load(f)
+    return ["angry", "fear", "happy", "sad", "surprise"]
 
 
 def split_files(split):
